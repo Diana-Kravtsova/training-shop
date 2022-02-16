@@ -151,7 +151,7 @@ const items = [
     }
 ];
 
-function Item_card(props) {
+function ItemCard(props) {
     let item = props.product_item;
     let genderItems = items.filter((e) => e.gender === item);
     let id_card = "clothes-card-" + item;
@@ -178,4 +178,4 @@ function Item_card(props) {
     );
 }
 
-export default Item_card;
+export default ItemCard;

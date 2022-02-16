@@ -1,5 +1,5 @@
 import React from 'react';
-import Item_Card from "../../pages/Item_card/Item_card";
+import ItemCard from "../../pages/ItemCard/ItemCard";
 
 
 import Share from "../../assets/img/vectorHeader/Share.svg"
@@ -51,7 +51,7 @@ function Categories(props) {
             <div className="continer">
                 <div className="items_wrapper">
                     <div className="sort__items">
-                        <Item_Card product_item = {props.product_type} />
+                        <ItemCard product_item = {props.product_type} />
                     </div>
                     <div className="item__further">
                         <img src={further} alt="item__further" />

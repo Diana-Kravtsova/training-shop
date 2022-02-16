@@ -33,7 +33,7 @@ const items = [
     },
 ];
 
-function Item_card_related() {
+function ItemCardRelated() {
     return (
         <div className="sort__items">
             {items.map((a, index) => (
@@ -54,4 +54,4 @@ function Item_card_related() {
     );
 }
 
-export default Item_card_related;
+export default ItemCardRelated;

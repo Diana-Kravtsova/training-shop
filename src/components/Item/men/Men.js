@@ -1,6 +1,6 @@
 import React from "react";
 import '../Item.scss'
-import Item_Card_Related from "../../../pages/Item_card/Item_card_related";
+import ItemCardRelated from "../../../pages/ItemCard/ItemCardRelated";
 
 /*images import*/
 import Share from "../../../assets/img/vectorItem/Share.svg";
@@ -246,7 +246,7 @@ function Men() {
                                 </p>
                             </div>
                             <div className="related-products__items">
-                                <Item_Card_Related />
+                                <ItemCardRelated />
                             </div>
                         </div>
                     </div>
