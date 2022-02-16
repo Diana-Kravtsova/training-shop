@@ -24,6 +24,20 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    opacity: 0.4;
+    padding-bottom: 16px;
+  }
 }
 .offer__man {
   position: absolute;
@@ -34,20 +48,6 @@
   position: absolute;
   left: -48.5%;
   top: 45px;
-}
-.background h2 {
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
-.background h5 {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  opacity: 0.4;
-  padding-bottom: 16px;
 }
 .offer input {
   background: #f8f8f8;

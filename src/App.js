@@ -14,6 +14,7 @@ import Categories from "./components/categories/Categories";
 /* router */
 import data from './data.json';
 import { Route, Routes } from "react-router-dom";
+import Blog from "./pages/main/Blog/Blog";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/women/*" element={<Women />} />
                 <Route path="/beauty" element={<Beauty/>}/>
                 <Route path="/accessories" element={<Accessories/>}/>
+                <Route path="/blog" element={<Blog />}/>
                 <Route path="/contact" element={<Contact/>}/>
             </Routes>
 

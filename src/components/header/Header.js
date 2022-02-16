@@ -53,17 +53,19 @@ const Header = () => {
                             </Link>
                         </div>
 
-                        <MenuHeader
-                            items={[
-                                "about us",
-                                "women",
-                                "men",
-                                "beauty",
-                                "accessories",
-                                "blog",
-                                "contact",
-                            ]}
-                        />
+                        <ul className="main__navigation" data-test-id='menu'>
+                            <MenuHeader
+                                items={[
+                                    "about us",
+                                    "women",
+                                    "men",
+                                    "beauty",
+                                    "accessories",
+                                    "blog",
+                                    "contact",
+                                ]}
+                            />
+                        </ul>
 
                         <div>
                             <img src={Search} alt="search" height="25" width="25"/>
