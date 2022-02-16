@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Item.scss";
-import Item_card_related from "../../../pages/Item_card/Item_card_related";
+import Item_Card_Related from "../../../pages/Item_card/Item_card_related";
 
 /*images import*/
 import Share from "../../../assets/img/vectorItem/Share.svg";
@@ -246,7 +246,7 @@ function Women() {
                                 </p>
                             </div>
                             <div className="related-products__items">
-                                <Item_card_related />
+                                <Item_Card_Related />
                             </div>
                         </div>
                     </div>

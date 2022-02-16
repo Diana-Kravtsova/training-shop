@@ -33,13 +33,13 @@ const items = [
     },
 ];
 
-function item_card_related() {
+function Item_card_related() {
     return (
         <div className="sort__items">
             {items.map((a, index) => (
                 <div key={index} className="item__card">
                     <div className="item__card-img">
-                        <Link to="product_page">
+                        <Link to="/women">
                             <img src={a.img} alt="item" />
                         </Link>
                     </div>
@@ -54,4 +54,4 @@ function item_card_related() {
     );
 }
 
-export default item_card_related;
+export default Item_card_related;

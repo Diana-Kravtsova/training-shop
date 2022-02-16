@@ -1,5 +1,5 @@
 import React from 'react';
-import Item_card from "../../pages/Item_card/Item_card";
+import Item_Card from "../../pages/Item_card/Item_card";
 
 
 import Share from "../../assets/img/vectorHeader/Share.svg"
@@ -19,8 +19,8 @@ function Categories(props) {
                 <div className="nav__categotiya-wrapper">
                     <div className="nav_categoriya__chit">
                         <ul className="nav__categoriya-link">
-                            <li><a>Home</a></li>
-                            <li><a>{props.product_type}</a></li>
+                            <li><span>Home</span></li>
+                            <li><span>{props.product_type}</span></li>
                         </ul>
                         <div className="nav__categoriya-share">
                             <img src={Share} alt="share" />
@@ -51,7 +51,7 @@ function Categories(props) {
             <div className="continer">
                 <div className="items_wrapper">
                     <div className="sort__items">
-                        <Item_card product_item = {props.product_type} />
+                        <Item_Card product_item = {props.product_type} />
                     </div>
                     <div className="item__further">
                         <img src={further} alt="item__further" />

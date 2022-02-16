@@ -23,10 +23,10 @@ const Footer = () => {
     return (
         <div className='footer' data-test-id='footer'>
             <div className="email">
-                <a>Be in touch with us:</a>
+                <span>Be in touch with us:</span>
                 <input type="email" id="email" placeholder="Enter your email"
                        pattern=".+@globex\.com"/>
-                <button><a>Join us</a></button>
+                <button><span>Join us</span></button>
                 <div className="footer-social">
                     <img src={Facebook} alt="facebook" width="20" height="20"/>
                     <img src={Twitter} alt="twitter" width="20" height="20"/>
@@ -73,25 +73,25 @@ const Footer = () => {
                         <li>Contact us</li>
                         <li>
                             <img src={Location} alt="location" width="15" height="15"/>
-                            <a>Belarus, Gomel, Lange 17</a>
+                            <span>Belarus, Gomel, Lange 17</span>
                         </li>
                         <li>
                             <img src={Phone} alt="phone" width="15" height="15"/>
-                            <a>+375 29 100 20 30</a>
+                            <span>+375 29 100 20 30</span>
                         </li>
                         <li>
                             <img src={TimeDark} alt="time" width="15" height="15"/>
-                            <a>All week 24/7</a>
+                            <span>All week 24/7</span>
                         </li>
                         <li>
                             <img src={Mail} alt="mail" width="15" height="15"/>
-                            <a>info@clevertec.ru</a>
+                            <span>info@clevertec.ru</span>
                         </li>
                     </ul>
                 </div>
             </nav>
             <section className="copyright">
-                <div><a>Copyright © 2032 all rights reserved</a></div>
+                <div><span>Copyright © 2032 all rights reserved</span></div>
                 <div>
                     <img src={Card1} alt="card" width="50" height="20"/>
                     <img src={Card2} alt="card" width="50" height="20"/>
@@ -102,7 +102,7 @@ const Footer = () => {
                     <img src={Card7} alt="card" width="50" height="20"/>
                 </div>
                 <div>
-                    <a href="https://clevertec.ru/study/frontend.html" target="_blank">Clevertec.ru/training</a>
+                    <a href="https://clevertec.ru/study/frontend.html" rel="noreferrer" target="_blank">Clevertec.ru/training</a>
                 </div>
             </section>
         </div>

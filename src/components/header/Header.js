@@ -26,15 +26,15 @@ const Header = () => {
                     <div className="block1-nav1">
                         <div>
                             <img src={Phone} alt="phone" width="15" height="15"/>
-                            <a>+375 29 100 20 30</a>
+                            <span>+375 29 100 20 30</span>
                         </div>
                         <div>
                             <img src={Map} alt="map" width="15" height="15"/>
-                            <a>Belarus, Gomel, Lange 17</a>
+                            <span>Belarus, Gomel, Lange 17</span>
                         </div>
                         <div>
                             <img src={Time} alt="time" width="15" height="15"/>
-                            <a>All week 24/7</a>
+                            <span>All week 24/7</span>
                         </div>
                     </div>
                     <div className="block2-nav1">

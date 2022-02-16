@@ -1,5 +1,5 @@
 import React from "react";
-import Item_card from "../../Item_card/Item_card";
+import Item_Card from "../../Item_card/Item_card";
 
 import "./ProductType.scss";
 
@@ -21,7 +21,7 @@ function ProductType (props)  {
                             </ul>
                         </div>
                         <div className="sort__items">
-                            <Item_card product_item = {props.product_type} />
+                            <Item_Card product_item = {props.product_type} />
                         </div>
                         <div className="sort__button">See All</div>
                     </div>
