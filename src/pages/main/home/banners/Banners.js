@@ -11,10 +11,12 @@ import bannerAccessories from '../../../../assets/img/imagesMain/banner-accessor
 const Banners = () => {
     return (
         <div className="main__banners">
-            <MainSlider />
-            <MainCategory title={'Women'} src={bannerWomen} />
-            <MainCategory title={'Men'} src={bannerMen} />
-            <MainCategory title={'Accessories'} src={bannerAccessories} />
+            <div className="container">
+                <MainSlider />
+                <MainCategory title={'Women'} src={bannerWomen} />
+                <MainCategory title={'Men'} src={bannerMen} />
+                <MainCategory title={'Accessories'} src={bannerAccessories} />
+            </div>
         </div>
     )
 }

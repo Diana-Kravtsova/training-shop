@@ -67,7 +67,7 @@ const Header = () => {
                             />
                         </ul>
 
-                        <div>
+                        <div className='nav2-img'>
                             <img src={Search} alt="search" height="25" width="25"/>
                             <img src={Globe} alt="globe" height="25" width="25"/>
                             <img src={User} alt="user" height="25" width="25"/>

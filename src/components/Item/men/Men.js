@@ -36,6 +36,7 @@ import Right from "../../../assets/img/vectorItem/right.png";
 import Heart from "../../../assets/img/vectorItem/heart.svg";
 import Scale from "../../../assets/img/vectorItem/scales.svg";
 import Review from "../../../assets/img/vectorItem/review.svg";
+import {Link} from "react-router-dom";
 
 function Men() {
     return (
@@ -46,15 +47,13 @@ function Men() {
                         <div className="nav_categoriya__chit">
                             <ul className="nav__categoriya-link">
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/">Home</a>
+                                    <Link to='/'>Home</Link>
                                 </li>
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/women">Women</a>
+                                    <Link to='/women'>Women</Link>
                                 </li>
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/">
-                                        Women's tracksuit Q109
-                                    </a>
+                                    <Link to='/'>Women's tracksuit Q109</Link>
                                 </li>
                             </ul>
                             <div className="nav__categoriya-share">

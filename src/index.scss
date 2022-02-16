@@ -21,6 +21,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Playfair-Display',
   monospace;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media (max-width: 500px) {
+  .nav1 {
+    .block1-nav1 {
+      flex-direction: column;
+    }
+  }
+  .nav2 {
+    div {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      .nav2-img{
+        flex-direction: row;
+
+      }
+    }
+  }
+}
 
 .nav1 {
   padding: 0 8vw;
@@ -59,6 +99,7 @@ code {
   }
 }
 
+
 .nav2 {
   padding: 10px 8vw;
   border-bottom: #F8F8F8 solid 2px;
@@ -83,11 +124,13 @@ code {
       list-style: none;
       padding: 5px 3vw 0;
 
-      a{
+      a {
         text-decoration: none;
+
         li {
           margin: 0 1.5vw;
           font-weight: 400;
+
           a {
             color: #121212;
           }
@@ -113,6 +156,27 @@ code {
 }
 
 
+@media (max-width: 570px) {
+  .footer {
+    .email {
+      flex-direction: column;
+      input{
+        margin: 20px 0;
+      }
+
+    }
+    .footer-nav{
+      flex-wrap: wrap
+    }
+    .copyright{
+      flex-direction: column;
+      align-items: center;
+      div{
+        margin: 20px 0;
+      }
+    }
+  }
+}
 .footer {
   .email {
     font-family: Spartan, sans-serif;
@@ -189,15 +253,18 @@ code {
         display: grid;
         list-style: none;
         padding-left: 0;
-        li{
+
+        li {
           font-size: 12px;
           margin-top: 20px;
           opacity: 80%;
-          img{
+
+          img {
             margin-right: 5px;
           }
         }
-        a{
+
+        a {
           text-decoration: none;
           text-transform: capitalize;
           font-size: 12px;
@@ -206,6 +273,7 @@ code {
           font-weight: 400;
         }
       }
+
       ul li:first-child {
         font-weight: 600;
         text-transform: uppercase;
@@ -224,6 +292,7 @@ code {
       img {
         margin: 0 5px;
       }
+
       span {
         color: #121212;
         opacity: 80%;
@@ -232,7 +301,6 @@ code {
     }
   }
 }
-
 
 
 @font-face {
@@ -255,15 +323,19 @@ code {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-delivery:before {
   content: "\e907";
 }
+
 .icon-return:before {
   content: "\e920";
 }
+
 .icon-support:before {
   content: "\e926";
 }
+
 .icon-arrow:before {
   content: "\e901";
 }

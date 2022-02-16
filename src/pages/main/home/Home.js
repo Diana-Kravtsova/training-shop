@@ -11,10 +11,10 @@ import Offer from '../offer/Offer'
 import Blog from "../Blog/Blog";
 import Clothes from "./clothes/Clothes";
 
-const Home = () => {
+const Home = ({banners}) => {
     return (
         <div className='home'>
-            <Banners />
+            <Banners  banners={banners} />
             <Policies />
             <Clothes />
             <section className='collections'>
