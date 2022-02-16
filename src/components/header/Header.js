@@ -46,7 +46,7 @@ const Header = () => {
                 </section>
 
                 <section className="nav2">
-                    <div className='menu' data-test-id='menu'>
+                    <div>
                         <div>
                             <Link to='/' className='header-nav-logo' data-test-id='header-logo-link'>
                                 CleverShop
