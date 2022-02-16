@@ -46,13 +46,13 @@ function Women() {
                         <div className="nav_categoriya__chit">
                             <ul className="nav__categoriya-link">
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/">Home</a>
+                                    <a href="https://diana-kravtsova.github.io/training-shop/#/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/women">Women</a>
+                                    <a href="https://diana-kravtsova.github.io/training-shop/#/women">Women</a>
                                 </li>
                                 <li>
-                                    <a href="https://Diana-Kravtsova.github.io/training-shop/">
+                                    <a href="https://diana-kravtsova.github.io/training-shop/#/">
                                         Women's tracksuit Q109
                                     </a>
                                 </li>

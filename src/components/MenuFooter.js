@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function MenuFooter({ items }) {
     return (
-        <div className='menu' data-test-id='menu'>
+        <div>
             <ul>
                 {items.map((name_navigation, index) => (
                     <li key={index}>
