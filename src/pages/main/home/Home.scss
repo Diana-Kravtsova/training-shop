@@ -1,0 +1,55 @@
+.collections {
+  display: flex;
+  justify-content: space-between;
+  margin: 96px auto;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+.offer {
+  height: 580px;
+  margin: 96px 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.background {
+  width: 532px;
+  height: 461px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.offer__man {
+  position: absolute;
+  top: 45px;
+  right: 161px;
+}
+
+.offer__woman {
+  position: absolute;
+  left: 122px;
+  top: 35px;
+}
+.background h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.background h5 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  opacity: 0.4;
+}
+.home{
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+}

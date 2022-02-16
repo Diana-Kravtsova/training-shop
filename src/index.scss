@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Playfair-Display';
+  src: local('Playfair-Display'), url(./assets/fonts/Playfair-Display/PlayfairDisplaySC-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: local('Spartan'), url(./assets/fonts/Spartan/Spartan-VariableFont_wght.ttf) format('truetype');;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Playfair-Display',
+  monospace;
+}
+
+.nav1 {
+  padding: 0 8vw;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+
+  .block1-nav1 {
+    display: flex;
+
+    div {
+      opacity: 80%;
+      display: flex;
+      align-items: center;
+      margin: 5px 2vw 5px 0;
+
+      a {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .block2-nav1 {
+    display: flex;
+
+    img {
+      display: flex;
+      align-items: center;
+      margin: 5px 0 5px 1vw;
+    }
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+}
+
+.nav2 {
+  padding: 10px 8vw;
+  border-bottom: #F8F8F8 solid 2px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-nav-logo {
+      text-decoration: none;
+      font-family: Playfair-Display, sans-serif;
+      color: #121212;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    ul {
+      font-family: Spartan, serif;
+      display: flex;
+      list-style: none;
+      padding: 5px 3vw 0;
+
+      a{
+        text-decoration: none;
+        li {
+          margin: 0 1.5vw;
+          font-weight: 400;
+          a {
+            color: #121212;
+          }
+        }
+
+      }
+    }
+
+    img {
+      margin-left: 2vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .nav2 {
+    div {
+      ul {
+        flex-direction: column
+      }
+    }
+  }
+}
+
+
+.footer {
+  .email {
+    font-family: Spartan, sans-serif;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8vw;
+    letter-spacing: 0.5px;
+
+    a {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-right: auto;
+    }
+
+    input {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-sizing: border-box;
+      border-radius: 0;
+      padding: 10px;
+      width: 30vw;
+    }
+
+    input:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    button {
+      margin-left: 10px;
+      padding: 10px;
+      border: 1px solid #FFFFFF;
+      background-color: #121212;
+
+      a {
+        padding: 10px;
+      }
+    }
+
+    button:active {
+      background-color: #ffffff;
+
+      a {
+        color: #121212;
+      }
+
+    }
+
+    .footer-social {
+      margin-left: auto;
+      display: flex;
+
+      img {
+        display: flex;
+        align-items: center;
+        margin: 5px 0 5px 1vw;
+      }
+    }
+
+  }
+
+  .footer-nav {
+    padding: 20px 8vw;
+    display: flex;
+    font-family: Spartan, sans-serif;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+
+      ul {
+        display: grid;
+        list-style: none;
+        padding-left: 0;
+        li{
+          font-size: 12px;
+          margin-top: 20px;
+          opacity: 80%;
+          img{
+            margin-right: 5px;
+          }
+        }
+        a{
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size: 12px;
+          margin-top: 20px;
+          color: #121212;
+          font-weight: 400;
+        }
+      }
+      ul li:first-child {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .copyright {
+    font-family: Spartan, sans-serif;
+    font-size: 11px;
+    padding: 20px 8vw;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      img {
+        margin: 0 5px;
+      }
+      a {
+        color: #121212;
+        opacity: 80%;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+
+@font-face {
+  font-family: "icomoon";
+  src: url("assets/fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-delivery:before {
+  content: "\e907";
+}
+.icon-return:before {
+  content: "\e920";
+}
+.icon-support:before {
+  content: "\e926";
+}
+.icon-arrow:before {
+  content: "\e901";
+}

@@ -1,0 +1,15 @@
+.main__banners {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 540px 255px 255px;
+  grid-template-rows: 200px 260px;
+  gap: 30px;
+}
+
+@media (max-width: 680px) {
+  .main__banners{
+    display: flex;
+  }
+}

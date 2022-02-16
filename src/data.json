@@ -1,0 +1,157 @@
+{
+  "blogs": [
+    {
+      "id": "0",
+      "title": "The Easiest Way to Break",
+      "desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+    },
+    {
+      "id": "1",
+      "title": "Wedding Season",
+      "desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+    },
+    {
+      "id": "2",
+      "title": "Recent Favorites On Repeat",
+      "desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+    }
+  ],
+  "women": [
+    {
+      "id": "0",
+      "name": "Women's tracksuit Q109",
+      "rating": "3",
+      "src": "./women-img/img0.jpg",
+      "price": "10.00",
+      "discounts": false
+    },
+    {
+      "id": "1",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img1.jpg",
+      "price": "20.00",
+      "discounts": {
+        "discount": true,
+        "size": "50"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Women's tracksuit Q109",
+      "rating": "3",
+      "src": "./women-img/img2.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "3",
+      "name": "Women's tracksuit Q109",
+      "rating": "2",
+      "src": "./women-img/img3.jpg",
+      "price": "40.00",
+      "discounts": false
+    },
+    {
+      "id": "4",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img4.jpg",
+      "price": "35.00",
+      "discounts": false
+    },
+    {
+      "id": "5",
+      "name": "Women's tracksuit Q109",
+      "rating": "2",
+      "src": "./women-img/img5.jpg",
+      "price": "15.00",
+      "discounts": {
+        "discount": true,
+        "size": "20"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Women's tracksuit Q109",
+      "rating": "5",
+      "src": "./women-img/img6.jpg",
+      "price": "25.00",
+      "discounts": false
+    },
+    {
+      "id": "7",
+      "name": "Women's tracksuit Q109",
+      "rating": "2",
+      "src": "./women-img/img7.jpg",
+      "price": "30.00",
+      "discounts": false
+    }
+  ],
+  "men": [
+    {
+      "id": "0",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img0.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "1",
+      "name": "Women's tracksuit Q109",
+      "rating": "3",
+      "src": "./women-img/img1.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "2",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img2.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "3",
+      "name": "Women's tracksuit Q109",
+      "rating": "5",
+      "src": "./women-img/img3.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "4",
+      "name": "Women's tracksuit Q109",
+      "rating": "2",
+      "src": "./women-img/img4.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "5",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img5.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "6",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img6.jpg",
+      "price": "30.00",
+      "discounts": false
+    },
+    {
+      "id": "7",
+      "name": "Women's tracksuit Q109",
+      "rating": "4",
+      "src": "./women-img/img7.jpg",
+      "price": "30.00",
+      "discounts": false
+    }
+  ]
+}

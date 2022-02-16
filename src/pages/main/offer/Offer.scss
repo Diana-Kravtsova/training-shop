@@ -1,0 +1,114 @@
+.offer {
+  background: linear-gradient(180deg, #f3f2f2 0%, #dcdbdb 100%);
+  max-width: 100%;
+  width: 100%;
+}
+.offer .container {
+  max-width: 1100px;
+  height: 580px;
+  margin: 96px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+}
+.background {
+  width: 532px;
+  height: 461px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.offer__man {
+  position: absolute;
+  left: 96.5%;
+  top: 45px;
+}
+.offer__woman {
+  position: absolute;
+  left: -48.5%;
+  top: 45px;
+}
+.background h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.background h5 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  opacity: 0.4;
+  padding-bottom: 16px;
+}
+.offer input {
+  background: #f8f8f8;
+  text-align: center;
+  width: 340px;
+  height: 64px;
+  margin: 32px 0 24px;
+}
+.offer input::placeholder {
+  color: #121212;
+  opacity: 0.4;
+}
+@media (max-width: 1130px) {
+  .offer__woman {
+    left: 2%;
+  }
+}
+@media (max-width: 950px) {
+  .offer__woman {
+    display: none;
+  }
+  .offer__man {
+    display: none;
+  }
+}
+
+.bigbanner__email {
+  height: 64px;
+  width: 340px;
+  background: rgba(248, 248, 248, 1);
+  margin: 32px auto 0 auto;
+  display: block;
+  border: none;
+}
+.bigbanner__email::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.bigbanner__button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  height: 64px;
+  width: 340px;
+  background: rgba(18, 18, 18, 1);
+  margin: 24px auto 0 auto;
+  border: none;
+}
+@media (max-width: 585px){
+  .bigbanner__email{
+    width: 200px;
+  }
+  .bigbanner__button{
+    width: 200px;
+  }
+}

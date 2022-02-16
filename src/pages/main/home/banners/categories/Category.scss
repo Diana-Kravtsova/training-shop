@@ -1,0 +1,35 @@
+.main__category {
+  position: relative;
+  a {
+    cursor: pointer;
+  }
+}
+.main__category:last-child {
+  grid-column: 2 span;
+}
+
+.banners {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 24px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@media (max-width: 680px) {
+  .banners {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+}
