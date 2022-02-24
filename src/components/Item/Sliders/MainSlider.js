@@ -1,14 +1,11 @@
-import {FC, useState} from "react";
-import {Navigation, Autoplay, Controller, Thumbs, FreeMode} from 'swiper';
+import { useState} from "react";
+import {Navigation, Autoplay, Controller, Thumbs} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import Photo_main from "../../../assets/img/imagesItem/main_photo.jpg";
 
 
 const MainSlider = ({ firstSwiper }) => {
-
-    const [secondSwiper, setSecondSwiper] = useState(null);
-    const path = process.env.REACT_APP_GITHUB_PATH
 
     return (
         <div className="product__main-slider main-slider">
