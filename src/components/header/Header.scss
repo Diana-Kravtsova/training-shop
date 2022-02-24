@@ -15,7 +15,7 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
-.main__navigation {
+.menu {
   display: flex;
   justify-content: space-between;
   li {
@@ -91,8 +91,47 @@ ul li {
   width: 14px;
   height: 18px;
 }
-.main__icons-basket img {
-  position: absolute;
-  top: -10px;
-  right: -10px;
+.main__icons-basket{
+  img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+
+
+@media screen and (max-width: 996px) {
+  .header-nav-logo {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.7s ease 0s;
+
+    li {
+      padding: 12px 0;
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  max-width: 1100px;
+}
+button{
+  border:none;
+  background-color: #fff;
 }

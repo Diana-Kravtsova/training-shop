@@ -15,13 +15,17 @@ import ShoppingBag from "../../assets/img/vectorNavigation/shopping-bag 2.svg";
 
 /*routes*/
 import { Link } from "react-router-dom";
-import MenuHeader from "../MenuHeader";
-
+import { useState } from 'react'
+import MenuHeader from "../Menu/MenuHeader";
+import Burger from "./Burger/Burger.js"
 
 const Header = () => {
+    const hide = () => { setMenuOpen(false) }
+    const show = () => { setMenuOpen(true) }
+    const [menuOpen, setMenuOpen] = useState(false)
+    const toggleMenu = () => { setMenuOpen(!menuOpen) }
     return (
         <div className='header' data-test-id='header'>
-            <nav>
                 <section className="nav1">
                     <div className="block1-nav1">
                         <div>
@@ -46,15 +50,16 @@ const Header = () => {
                 </section>
 
                 <section className="nav2">
-                    <div>
+                    <div onBlur={hide}>
                         <div>
                             <Link to='/' className='header-nav-logo' data-test-id='header-logo-link'>
                                 CleverShop
                             </Link>
                         </div>
 
-                        <ul className="main__navigation" data-test-id='menu'>
+                        <ul className="menu" data-test-id='burger-menu'>
                             <MenuHeader
+                                show={show}
                                 items={[
                                     "about us",
                                     "women",
@@ -73,10 +78,23 @@ const Header = () => {
                             <img src={User} alt="user" height="25" width="25"/>
                             <img src={ShoppingBag} alt="shoppingBag" height="25" width="25"/>
                         </div>
+
+                        <Burger toggleMenu={toggleMenu} isOpen={menuOpen} />
+
                     </div>
                 </section>
-            </nav>
+            <style>{`
+                @media(max-width: 996px) { 
+                    .menu{
+                    transform: translate${menuOpen ? '(0)' : '(-100%)'};
+                    }
+                    body{
+                        overflow: ${menuOpen ? 'hidden' : 'auto'} 
+                    }
+                }
+        `}</style>
         </div>
+
     );
 }
 

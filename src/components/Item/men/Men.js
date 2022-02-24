@@ -1,6 +1,7 @@
 import React from "react";
 import '../Item.scss'
 import ItemCardRelated from "../../../pages/ItemCard/ItemCardRelated";
+import ItemHeader from "../ItemHeader";
 
 /*images import*/
 import Share from "../../../assets/img/vectorItem/Share.svg";
@@ -36,35 +37,11 @@ import Right from "../../../assets/img/vectorItem/right.png";
 import Heart from "../../../assets/img/vectorItem/heart.svg";
 import Scale from "../../../assets/img/vectorItem/scales.svg";
 import Review from "../../../assets/img/vectorItem/review.svg";
-import {Link} from "react-router-dom";
 
 function Men() {
     return (
         <div data-test-id="product-page-men">
-            <div className="nav__categoriya">
-                <div className="container">
-                    <div className="nav__categotiya-wrapper">
-                        <div className="nav_categoriya__chit">
-                            <ul className="nav__categoriya-link">
-                                <li>
-                                    <Link to='/'>Home</Link>
-                                </li>
-                                <li>
-                                    <Link to='/women'>Women</Link>
-                                </li>
-                                <li>
-                                    <Link to='/'>Women's tracksuit Q109</Link>
-                                </li>
-                            </ul>
-                            <div className="nav__categoriya-share">
-                                <img src={Share} alt="share" />
-                                <p>Share</p>
-                            </div>
-                        </div>
-                        <div className="nav__categoriya-title">Women's tracksuit Q109</div>
-                    </div>
-                </div>
-            </div>
+            <ItemHeader />
             <div className="item">
                 <div className="container">
                     <div className="item__wrapper">

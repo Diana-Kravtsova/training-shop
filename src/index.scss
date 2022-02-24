@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'IcoFont';
+  src: local('IcoFont'), url(./assets/fonts/icofont.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Playfair-Display';
   src: local('Playfair-Display'), url(./assets/fonts/Playfair-Display/PlayfairDisplaySC-Regular.ttf) format('truetype');
 }

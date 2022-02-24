@@ -8,7 +8,6 @@ body {
 }
 .sort__title {
   height: 220px;
-  padding-top: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,19 +37,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.sort__navigation li {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  opacity: 0.6;
-  padding-left: 32px;
-}
-.sort__navigation li:first-child {
-  font-weight: 500;
-  opacity: 1;
-  padding-left: 0;
+  li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    opacity: 0.6;
+    padding-left: 32px;
+  }
+  li:first-child {
+    font-weight: 500;
+    opacity: 1;
+    padding-left: 0;
+  }
 }
 .sort__items {
   display: flex;
@@ -58,6 +57,8 @@ body {
   justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
+  width: 100%;
+
 }
 .item__card {
   max-width: 255px;

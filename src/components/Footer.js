@@ -17,7 +17,7 @@ import Card6 from "../assets/img/vectorFooter/cards/card6.svg";
 import Card7 from "../assets/img/vectorFooter/cards/card7.svg";
 
 /* routes */
-import MenuFooter from "./MenuFooter";
+import MenuFooter from "./Menu/MenuFooter";
 
 const Footer = () => {
     return (

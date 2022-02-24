@@ -1,6 +1,8 @@
 import React from 'react';
 import "../Item.scss";
 import ItemCardRelated from "../../../pages/ItemCard/ItemCardRelated";
+import ItemHeader from "../ItemHeader";
+import ItemPics from "../ItemPics";
 
 /*images import*/
 import Share from "../../../assets/img/vectorItem/Share.svg";
@@ -8,11 +10,6 @@ import Star from "../../../assets/img/vectorItem/star.svg";
 import Slider_up from "../../../assets/img/vectorItem/slider_up.png";
 import Slider_down from "../../../assets/img/vectorItem/slider_down.png";
 
-import Photo_1 from "../../../assets/img/imagesItem/item_photo1.jpg";
-import Photo_2 from "../../../assets/img/imagesItem/item_photo2.jpg";
-import Photo_3 from "../../../assets/img/imagesItem/item_photo3.jpg";
-import Photo_4 from "../../../assets/img/imagesItem/item_photo4.jpg";
-import Photo_main from "../../../assets/img/imagesItem/main_photo.jpg";
 import Item_color_1 from "../../../assets/img/imagesItem/item_color1.jpg";
 import Item_color_2 from "../../../assets/img/imagesItem/item_color2.jpg";
 import Item_color_3 from "../../../assets/img/imagesItem/item_color3.jpg";
@@ -36,72 +33,17 @@ import Right from "../../../assets/img/vectorItem/right.png";
 import Heart from "../../../assets/img/vectorItem/heart.svg";
 import Scale from "../../../assets/img/vectorItem/scales.svg";
 import Review from "../../../assets/img/vectorItem/review.svg";
-import {Link} from "react-router-dom";
 
 function Women() {
     return (
         <div data-test-id="product-page-women">
-            <div className="nav__categoriya">
-                <div className="container">
-                    <div className="nav__categotiya-wrapper">
-                        <div className="nav_categoriya__chit">
-                            <ul className="nav__categoriya-link">
-                                <li>
-                                    <Link to='/'>Home</Link>
-                                </li>
-                                <li>
-                                    <Link to='/women'>Women</Link>
-                                </li>
-                                <li>
-                                    <Link to='/'>Women's tracksuit Q109</Link>
-                                </li>
-                            </ul>
-                            <div className="nav__categoriya-share">
-                                <img src={Share} alt="share" />
-                                <p>Share</p>
-                            </div>
-                        </div>
-                        <div className="nav__categoriya-title">Women's tracksuit Q109</div>
-                    </div>
-                </div>
-            </div>
+            <ItemHeader/>
             <div className="item">
                 <div className="container">
                     <div className="item__wrapper">
-                        <div className="item__score-all">
-                            <div className="item__score">
-                                <img src={Star} alt="star" />
-                                <img src={Star} alt="star" />
-                                <img src={Star} alt="star" />
-                                <img src={Star} alt="star" />
-                                <img src={Star} alt="star" />
-                                <p>2 Reviews</p>
-                            </div>
-                            <div className="item__score__info">
-                                <p>
-                                    <span>SKU:</span>777
-                                </p>
-                                <p>
-                                    <span>Availability:</span>In Stock
-                                </p>
-                            </div>
-                        </div>
                         <div className="item__all">
-                            <div className="item__slider">
-                                <div className="item__slider-small-photo">
-                                    <div className="item__slider-arrow">
-                                        <img src={Slider_up} alt="up_icon" />
-                                        <img src={Slider_down} alt="down_icon" />
-                                    </div>
-                                    <img src={Photo_1} alt="item__photo" />
-                                    <img src={Photo_2} alt="item__photo" />
-                                    <img src={Photo_3} alt="item__photo" />
-                                    <img src={Photo_4} alt="item__photo" />
-                                </div>
-                                <div className="item__slider-big-photo">
-                                    <img src={Photo_main} alt="main__photo" />
-                                </div>
-                            </div>
+                            <ItemPics/>
+
                             <div className="item__info">
                                 <div className="item__info-color">
                                     <p>
@@ -109,10 +51,10 @@ function Women() {
                                     </p>
                                 </div>
                                 <div className="item__info-color-foto">
-                                    <img src={Item_color_1} alt="item_color" />
-                                    <img src={Item_color_2} alt="item_color" />
-                                    <img src={Item_color_3} alt="item_color" />
-                                    <img src={Item_color_4} alt="item_color" />
+                                    <img src={Item_color_1} alt="item_color"/>
+                                    <img src={Item_color_2} alt="item_color"/>
+                                    <img src={Item_color_3} alt="item_color"/>
+                                    <img src={Item_color_4} alt="item_color"/>
                                 </div>
                                 <div className="item__info-size">
                                     <p>
@@ -126,28 +68,28 @@ function Women() {
                                     <p className="size_icon">L</p>
                                 </div>
                                 <div className="item__info-size-guide">
-                                    <img src={Size_guide} alt="" />
+                                    <img src={Size_guide} alt=""/>
                                     Size guide
                                 </div>
                                 <div className="item__info-line"></div>
                                 <div className="item__info-cost">
                                     <div className="item__info-price">$ 379.99</div>
                                     <div className="item__info-add-to-card">Add to card</div>
-                                    <img src={Heart} alt="icon" />
-                                    <img src={Scale} alt="icon" />
+                                    <img src={Heart} alt="icon"/>
+                                    <img src={Scale} alt="icon"/>
                                 </div>
                                 <div className="item__info-line"></div>
                                 <div className="item__info-conditions">
                                     <p>
-                                        <img src={Shipping} alt="icon" />
+                                        <img src={Shipping} alt="icon"/>
                                         Shipping & Delivery
                                     </p>
                                     <p>
-                                        <img src={Returns} alt="icon" />
+                                        <img src={Returns} alt="icon"/>
                                         Returns & Exchanges
                                     </p>
                                     <p>
-                                        <img src={Ask} alt="icon" />
+                                        <img src={Ask} alt="icon"/>
                                         Ask a question
                                     </p>
                                 </div>
@@ -158,13 +100,13 @@ function Women() {
                                     </div>
 
                                     <div className="item__info-pay">
-                                        <img src={Pay1} alt="pay" />
-                                        <img src={Pay2} alt="pay" />
-                                        <img src={Pay3} alt="pay" />
-                                        <img src={Pay4} alt="pay" />
-                                        <img src={Pay5} alt="pay" />
-                                        <img src={Pay6} alt="pay" />
-                                        <img src={Pay7} alt="pay" />
+                                        <img src={Pay1} alt="pay"/>
+                                        <img src={Pay2} alt="pay"/>
+                                        <img src={Pay3} alt="pay"/>
+                                        <img src={Pay4} alt="pay"/>
+                                        <img src={Pay5} alt="pay"/>
+                                        <img src={Pay6} alt="pay"/>
+                                        <img src={Pay7} alt="pay"/>
                                     </div>
                                     <div className="item__info-line"></div>
                                     <div className="item__info-description">DESCRIPTION</div>
@@ -186,26 +128,26 @@ function Women() {
                                         <p>REVIEWS</p>
                                         <div className="item__info-score-reviews">
                                             <div className="item__score-star">
-                                                <img src={Star} alt="star" />
-                                                <img src={Star} alt="star" />
-                                                <img src={Star} alt="star" />
-                                                <img src={Star} alt="star" />
-                                                <img src={Star} alt="star" />
+                                                <img src={Star} alt="star"/>
+                                                <img src={Star} alt="star"/>
+                                                <img src={Star} alt="star"/>
+                                                <img src={Star} alt="star"/>
+                                                <img src={Star} alt="star"/>
                                                 <p>2 Reviews</p>
                                             </div>
                                             <p>
-                                                <img src={Review} alt="icon" /> Write a review
+                                                <img src={Review} alt="icon"/> Write a review
                                             </p>
                                         </div>
                                         <div className="item__review">
                                             <div className="item__review-title">
                                                 <div className="item__review-title-name">Oleh Chabanov</div>
                                                 <div className="item__review-title-data">
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
                                                 </div>
                                             </div>
                                             <div className="item__review-contain">
@@ -218,11 +160,11 @@ function Women() {
                                             <div className="item__review-title">
                                                 <div className="item__review-title-name">ShAmAn design</div>
                                                 <div className="item__review-title-data">
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
-                                                    <img src={Star} alt="star" />
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
+                                                    <img src={Star} alt="star"/>
                                                 </div>
                                             </div>
                                             <div className="item__review-contain">
@@ -236,18 +178,20 @@ function Women() {
                             </div>
                         </div>
 
-                        <div className="related-products">
-                            <div className="related-products__title">
-                                <div>RELATED PRODUCTS</div>
-                                <p>
-                                    <img src={Left} alt="icon" />
-                                    <img src={Right} alt="icon" />
-                                </p>
-                            </div>
-                            <div className="related-products__items">
+                        <section className="similar">
+                            <div className="similar__container">
+                                <div className="similar__top">
+                                    <p className="similar__title">RELATED PRODUCTS</p>
+                                    <div className="btn-similar-container">
+                                        <div className="btn-similar-prev"></div>
+                                        <div className="btn-similar-next"></div>
+                                    </div>
+                                </div>
+
                                 <ItemCardRelated />
+
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

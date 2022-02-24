@@ -2,7 +2,6 @@
 import './Offer.scss'
 import man from '../../../assets/img/imagesMain/man.png'
 import woman from '../../../assets/img/imagesMain/woman.png'
-import Form from "../Form";
 
 const Offer = () => {
     return (
@@ -22,7 +21,6 @@ const Offer = () => {
                     />
                     <button className="bigbanner__button">Subscribe</button>
 
-                    <Form text='subscribe' classname='column' btnStyle='btnDark' />
                     <div className='offer__man'><img src={man} alt="man" /></div>
                     <div className='offer__woman'><img src={woman} alt="woman" /></div>
                 </div>

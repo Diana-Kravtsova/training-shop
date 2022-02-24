@@ -7,9 +7,9 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-.main__slider img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 .campaignTeaser__slider {
   transform: translate(-50%, -50%);
@@ -39,30 +39,61 @@
   opacity: 0.4;
   margin: 12px;
 }
-.button-left,
-.button-right {
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  background: #fff;
-  width: 40px;
-  height: 40px;
-  font-size: 15px;
-  z-index: 2;
+
+.main__slider {
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 16px;
+  }
+  .swiper-button-prev,.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    z-index: 2;
+    color: #121212;
+    opacity: 0.6;
+  }
 }
-.icon-arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+@media (max-width: 1100px) {
+  .main__slider {
+    grid-column: 1 / 2;
+    grid-row: 1/5;
+    max-width: initial;
+    .swiper-button-prev,.swiper-button-next {
+      top: 160px;
+    }
+  }
+  .campaignTeaser__slider {
+    width: 25vw;
+    top: 160px;
+  }
 }
-.button-right {
-  transform: rotate(180deg);
-}
+
 @media (max-width: 790px) {
   .main__slider {
     grid-column: 1 / 3;
-    grid-row: initial;
-    max-width: initial;
+    grid-row: 1/4;
+    .swiper-button-prev, .swiper-button-next {
+      top: 200px;
+    }
+  }
+  .campaignTeaser__slider {
+    top: 45%;
+    width: 40vw;
+  }
+}
+@media (max-width: 660px) {
+  .main__slider {
+    grid-row: 1/3;
+    .swiper-button-prev, .swiper-button-next {
+      top: 130px;
+    }
+  }
+  .campaignTeaser__slider {
+    display: none;
   }
 }
