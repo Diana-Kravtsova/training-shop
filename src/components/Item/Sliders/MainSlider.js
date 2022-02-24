@@ -1,12 +1,9 @@
-import { useState} from "react";
 import {Navigation, Autoplay, Controller, Thumbs} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import Photo_main from "../../../assets/img/imagesItem/main_photo.jpg";
 
-
 const MainSlider = ({ firstSwiper }) => {
-
     return (
         <div className="product__main-slider main-slider">
             <Swiper

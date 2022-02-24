@@ -34,7 +34,7 @@ const Footer = () => {
                     <img src={Pinterest} alt="pinterest" width="20" height="20"/>
                 </div>
             </div>
-            <nav className="footer-nav">
+            <div className="footer-nav">
                 <div className="footer-nav-categories">
                     <ul>
                         <li>Categories</li>
@@ -89,8 +89,8 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <section className="copyright">
+            </div>
+            <div className="copyright">
                 <div><span>Copyright © 2032 all rights reserved</span></div>
                 <div>
                     <img src={Card1} alt="card" width="50" height="20"/>
@@ -104,7 +104,7 @@ const Footer = () => {
                 <div>
                     <a href="https://clevertec.ru/study/frontend.html" rel="noreferrer" target="_blank">Clevertec.ru/training</a>
                 </div>
-            </section>
+            </div>
         </div>
     );
 };

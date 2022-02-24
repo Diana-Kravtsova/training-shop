@@ -4,16 +4,7 @@ import ItemCardRelated from "../../../pages/ItemCard/ItemCardRelated";
 import ItemHeader from "../ItemHeader";
 
 /*images import*/
-import Share from "../../../assets/img/vectorItem/Share.svg";
 import Star from "../../../assets/img/vectorItem/star.svg";
-import Slider_up from "../../../assets/img/vectorItem/slider_up.png";
-import Slider_down from "../../../assets/img/vectorItem/slider_down.png";
-
-import Photo_1 from "../../../assets/img/imagesItem/item_photo1.jpg";
-import Photo_2 from "../../../assets/img/imagesItem/item_photo2.jpg";
-import Photo_3 from "../../../assets/img/imagesItem/item_photo3.jpg";
-import Photo_4 from "../../../assets/img/imagesItem/item_photo4.jpg";
-import Photo_main from "../../../assets/img/imagesItem/main_photo.jpg";
 import Item_color_1 from "../../../assets/img/imagesItem/item_color1.jpg";
 import Item_color_2 from "../../../assets/img/imagesItem/item_color2.jpg";
 import Item_color_3 from "../../../assets/img/imagesItem/item_color3.jpg";
@@ -32,8 +23,6 @@ import Pay5 from "../../../assets/img/vectorFooter/cards/card5.svg";
 import Pay6 from "../../../assets/img/vectorFooter/cards/card6.svg";
 import Pay7 from "../../../assets/img/vectorFooter/cards/card7.svg";
 
-import Left from "../../../assets/img/vectorItem/left.png";
-import Right from "../../../assets/img/vectorItem/right.png";
 import Heart from "../../../assets/img/vectorItem/heart.svg";
 import Scale from "../../../assets/img/vectorItem/scales.svg";
 import Review from "../../../assets/img/vectorItem/review.svg";
