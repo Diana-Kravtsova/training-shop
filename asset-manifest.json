@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.0ef4a28a.css",
-    "main.js": "/training-shop/static/js/main.24eda43b.js",
+    "main.css": "/training-shop/static/css/main.85d644ad.css",
+    "main.js": "/training-shop/static/js/main.226ca4f0.js",
     "static/media/woman.png": "/training-shop/static/media/woman.4152b783e591f01bafb6.png",
     "static/media/PlayfairDisplaySC-Regular.ttf": "/training-shop/static/media/PlayfairDisplaySC-Regular.8c8d2f742833cf9cb110.ttf",
     "static/media/girl-slider.jpg": "/training-shop/static/media/girl-slider.ba5d4eb3d9420781b5f8.jpg",
@@ -74,11 +74,11 @@
     "index.html": "/training-shop/index.html",
     "static/media/shopping-bag 2.svg": "/training-shop/static/media/shopping-bag 2.cddc071bd5dc6b49753aabb593ec8cec.svg",
     "static/media/view1.svg": "/training-shop/static/media/view1.44db9bee8523b700cc8144da2caaed0d.svg",
-    "main.0ef4a28a.css.map": "/training-shop/static/css/main.0ef4a28a.css.map",
-    "main.24eda43b.js.map": "/training-shop/static/js/main.24eda43b.js.map"
+    "main.85d644ad.css.map": "/training-shop/static/css/main.85d644ad.css.map",
+    "main.226ca4f0.js.map": "/training-shop/static/js/main.226ca4f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ef4a28a.css",
-    "static/js/main.24eda43b.js"
+    "static/css/main.85d644ad.css",
+    "static/js/main.226ca4f0.js"
   ]
 }
