@@ -1,4 +1,3 @@
-import { React } from 'react'
 import "swiper/css/thumbs"
 import "swiper/css/navigation"
 import "swiper/css"
@@ -14,7 +13,7 @@ export const SlideNextButton = ({ next, _class }) => {
                 color: '#121212',
                 opacity: 0.6
             }}
-        ></button>
+        />
     );
 }
 
@@ -29,6 +28,6 @@ export const SlidePrevButton = ({ prev, _class }) => {
                 color: '#121212',
                 opacity: 0.6
             }}
-        ></button >
+        />
     );
 }

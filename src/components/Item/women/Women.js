@@ -66,14 +66,14 @@ function Women() {
                                     <img src={Size_guide} alt=""/>
                                     Size guide
                                 </div>
-                                <div className="item__info-line"></div>
+                                <div className="item__info-line"/>
                                 <div className="item__info-cost">
                                     <div className="item__info-price">$ 379.99</div>
                                     <div className="item__info-add-to-card">Add to card</div>
                                     <img src={Heart} alt="icon"/>
                                     <img src={Scale} alt="icon"/>
                                 </div>
-                                <div className="item__info-line"></div>
+                                <div className="item__info-line"/>
                                 <div className="item__info-conditions">
                                     <p>
                                         <img src={Shipping} alt="icon"/>
@@ -91,7 +91,7 @@ function Women() {
                                 <div className="item__info-checkout">
                                     <div className="item__info-checkout-safe">
                                         <p>guaranteed safe checkout</p>
-                                        <p className="item__info-checkout-safe-line"></p>
+                                        <p className="item__info-checkout-safe-line"/>
                                     </div>
 
                                     <div className="item__info-pay">
@@ -103,9 +103,9 @@ function Women() {
                                         <img src={Pay6} alt="pay"/>
                                         <img src={Pay7} alt="pay"/>
                                     </div>
-                                    <div className="item__info-line"></div>
+                                    <div className="item__info-line"/>
                                     <div className="item__info-description">DESCRIPTION</div>
-                                    <div className="item__info-line"></div>
+                                    <div className="item__info-line"/>
                                     <div className="item__info-additional">
                                         <p>ADDITIONAL INFORMATION</p>
                                         <p>
@@ -118,7 +118,7 @@ function Women() {
                                             Material: <span>100% Polyester</span>
                                         </p>
                                     </div>
-                                    <div className="item__info-line"></div>
+                                    <div className="item__info-line"/>
                                     <div className="item__info-reviews">
                                         <p>REVIEWS</p>
                                         <div className="item__info-score-reviews">
@@ -168,23 +168,14 @@ function Women() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="item__info-line"></div>
+                                    <div className="item__info-line"/>
                                 </div>
                             </div>
                         </div>
 
                         <section className="similar">
                             <div className="similar__container">
-                                <div className="similar__top">
-                                    <p className="similar__title">RELATED PRODUCTS</p>
-                                    <div className="btn-similar-container">
-                                        <div className="btn-similar-prev"></div>
-                                        <div className="btn-similar-next"></div>
-                                    </div>
-                                </div>
-
                                 <ItemCardRelated />
-
                             </div>
                         </section>
                     </div>

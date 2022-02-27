@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types'
-/*router links*/
 import { NavLink } from "react-router-dom";
 
 function MenuHeader({ items, show, hide}) {
@@ -20,11 +18,7 @@ function MenuHeader({ items, show, hide}) {
         ))
     );
 }
-MenuHeader.propTypes = {
-    items: PropTypes.array,
-    show: PropTypes.func,
-    hide: PropTypes.func,
-}
+
 
 
 export default MenuHeader;

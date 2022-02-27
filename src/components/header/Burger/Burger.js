@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import './Burger.scss'
 
 const Burger = ({ toggleMenu, isOpen }) => {
@@ -6,18 +5,16 @@ const Burger = ({ toggleMenu, isOpen }) => {
     isOpen ? toggle = '_active' : toggle = null
     return (
         <>
-            <button type="button" className={`menu__icon ${toggle} icon-menu`} onClick={toggleMenu}>
-                <span></span>
-                <span></span>
-                <span></span>
+            <button data-test-id='burger-menu-btn'
+                    type="button"
+                    className={`menu__icon ${toggle} icon-menu`}
+                    onClick={toggleMenu}>
+                <span/>
+                <span/>
+                <span/>
             </button>
         </>
     )
-}
-
-Burger.propTypes = {
-    toggleMenu: PropTypes.func,
-    isOpen: PropTypes.bool
 }
 
 export default Burger

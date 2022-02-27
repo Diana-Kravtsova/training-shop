@@ -170,7 +170,7 @@ function ItemCard(props) {
                     <div className="item__card-title">{a.title}</div>
                     <div className="item__card-suptitle">
                         <div className="item__card-price">{a.price}</div>
-                        <div className="item__card-score"></div>
+                        <div className="item__card-score"/>
                     </div>
                 </Link>
             ))}
