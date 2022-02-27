@@ -32,9 +32,8 @@ const ItemPics = () => {
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
 
-    return (
+    return (<>
         <div className="product__pics" data-test-id='product-slider'>
-
             <div className="product__pics_previews">
                 <div className="product__pics_controls">
                     <SlidePrevButton _class='product__pics_controls'/>
@@ -105,6 +104,7 @@ const ItemPics = () => {
                 </Swiper>
             </ul>
         </div>
+    </>
     );
 }
 
