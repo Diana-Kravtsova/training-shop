@@ -2,7 +2,7 @@ import "swiper/css/thumbs"
 import "swiper/css/navigation"
 import "swiper/css"
 
-export const SlideNextButton = ({ next, _class }) => {
+export const NextButton = ({ next, _class }) => {
     if (!_class) _class = ''
 
     return (
@@ -17,7 +17,7 @@ export const SlideNextButton = ({ next, _class }) => {
     );
 }
 
-export const SlidePrevButton = ({ prev, _class }) => {
+export const PrevButton = ({ prev, _class }) => {
 
     if (!_class) _class = ''
     return (

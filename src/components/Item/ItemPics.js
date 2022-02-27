@@ -10,7 +10,7 @@ import Photo_2 from "../../assets/img/imagesItem/item_photo2.jpg";
 import Photo_3 from "../../assets/img/imagesItem/item_photo3.jpg";
 import Photo_4 from "../../assets/img/imagesItem/item_photo4.jpg";
 import Photo_main from "../../assets/img/imagesItem/main_photo.jpg";
-import {SlideNextButton, SlidePrevButton} from "./Sliders/SliderButtons/SliderButtons";
+import {NextButton, PrevButton} from "./Sliders/SliderButtons/SliderButtons";
 import {Controller, Navigation} from "swiper";
 
 const secondaryPhoto = [
@@ -36,8 +36,8 @@ const ItemPics = () => {
         <div className="product__pics" data-test-id='product-slider'>
             <div className="product__pics_previews">
                 <div className="product__pics_controls">
-                    <SlidePrevButton _class='product__pics_controls'/>
-                    <SlideNextButton _class='product__pics_controls'/>
+                    <PrevButton _class='product__pics_controls'/>
+                    <NextButton _class='product__pics_controls'/>
                 </div>
                 <ul className="product__pics_little">
                     <Swiper
@@ -59,14 +59,13 @@ const ItemPics = () => {
                         direction={'vertical'}
                         slideToClickedSlide={true}
                         centeredSlides={true}
-                        grabCursor={true}
                         onSwiper={setFirstSwiper}
                         watchOverflow={true}
                     >
 
                         {
                             secondaryPhoto.map((a, index) => (
-                                <SwiperSlide key={index  + 'preview'}>
+                                <SwiperSlide key={index}>
                                     <li>
                                         <img src={a.img} alt="prev"/>
                                     </li>
@@ -79,12 +78,12 @@ const ItemPics = () => {
 
             <ul className="product__pics_big">
                 <Swiper
-                    style={{
-                        "--swiper-navigation-color": "#000"
-                    }}
                     onSwiper={setSecondSwiper}
                     controller={{control: firstSwiper}}
                     speed={1000}
+                    style={{
+                        "--swiper-navigation-color": "#000"
+                    }}
                     watchSlidesProgress
                     spaceBetween={10}
                     navigation

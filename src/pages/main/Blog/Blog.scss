@@ -19,12 +19,20 @@
   letter-spacing: 0.06em;
   margin-bottom: 48px;
 }
-@media (max-width: 1110px) {
+@media (max-width: 1080px) {
   .blog__articles{
     display: flex;
     padding: 0 20px;
     justify-content: space-around;
     flex-direction: column;
+  }
+}
+@media (max-width: 840px) {
+  .blog__articles{
+    padding-left: 0;
+    img{
+      max-width: 340px;
+    }
   }
 }
 @media (max-width: 1110px) {
