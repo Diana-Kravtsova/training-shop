@@ -10,7 +10,6 @@ import Instagram from "../../assets/img/vectorHeader/Vector-4.svg";
 import Pinterest from "../../assets/img/vectorHeader/Vector-3.svg";
 import Search from "../../assets/img/vectorNavigation/search 1.svg";
 import Globe from "../../assets/img/vectorNavigation/Vector.svg";
-import User from "../../assets/img/vectorNavigation/Group.svg";
 import ShoppingBag from "../../assets/img/vectorNavigation/shopping-bag 2.svg";
 
 /*routes*/
@@ -34,7 +33,7 @@ const Header = () => {
                         </div>
                         <div>
                             <img src={Map} alt="map" width="15" height="15"/>
-                            <span>Belarus, Gomel, Lange 17</span>
+                            <span>Belarus, Gomel</span>
                         </div>
                         <div>
                             <img src={Time} alt="time" width="15" height="15"/>
@@ -52,22 +51,18 @@ const Header = () => {
                 <section className="nav2">
                     <div onBlur={hide}>
                         <div>
-                            <Link to='/' className='header-nav-logo' data-test-id='header-logo-link'>
-                                CleverShop
+                            <Link to={{path: "/"}} className='header-nav-logo'>
+                                FSRS SHOP
                             </Link>
                         </div>
 
-                        <ul className="menu" data-test-id='burger-menu'>
+                        <ul className="menu">
                             <MenuHeader
                                 show={show}
                                 items={[
-                                    "about us",
                                     "women",
                                     "men",
-                                    "beauty",
-                                    "accessories",
                                     "blog",
-                                    "contact",
                                 ]}
                             />
                         </ul>
@@ -75,7 +70,6 @@ const Header = () => {
                         <div className='nav2-img'>
                             <img src={Search} alt="search" height="25" width="25"/>
                             <img src={Globe} alt="globe" height="25" width="25"/>
-                            <img src={User} alt="user" height="25" width="25"/>
                             <img src={ShoppingBag} alt="shoppingBag" height="25" width="25"/>
                         </div>
 
@@ -86,7 +80,7 @@ const Header = () => {
             <style>{`
                 @media(max-width: 996px) { 
                     .menu{
-                    transform: translate${menuOpen ? '(0)' : '(-100%)'};
+                        transform: translate${menuOpen ? '(0)' : '(-100%)'};
                     }
                     body{
                         overflow: ${menuOpen ? 'hidden' : 'auto'} 

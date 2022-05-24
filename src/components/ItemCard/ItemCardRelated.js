@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import '../../components/Item/Sliders/Sliders.scss'
+import '../Item/Sliders/Sliders.scss'
 import './ItemCardRelated.scss'
 
 import item_women_1 from "../../assets/img/women-img/item-women1.jpg";
@@ -10,7 +10,7 @@ import item_women_4 from "../../assets/img/women-img/item-women4.jpg";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper";
 import 'swiper/scss';
-import {NextButton, PrevButton} from "../../components/Item/Sliders/SliderButtons/SliderButtons";
+import {NextButton, PrevButton} from "../Item/Sliders/SliderButtons/SliderButtons";
 
 const items = [
     {
@@ -51,9 +51,9 @@ const items = [
     },
 ];
 
-function ItemCardRelated() {
+function ItemCardRelated({card}) {
     return (
-        <section className='products__related' data-test-id='related-slider'>
+        <section className='products__related' >
             <div className="container">
                 <div className='related__top'>
                     <h3 className="product__related_title">Related Products</h3>
@@ -96,16 +96,16 @@ function ItemCardRelated() {
                             items.map((a, index) => (
                                 <SwiperSlide key={index} className="item__card">
                                     <li className='li_cards-item'>
-                                        <Link to="/women"
+                                        <Link to={`/${card.category}`}
                                               className='cards-item'>
                                             <div className='img__containter'>
-                                                <img src={a.img} alt="item"/>
+                                                <img className="cards__img" src={card.images.url} alt="goods"/>
                                             </div>
                                             <div className='product__info'>
-                                                <h5 className="product__title">{a.title}</h5>
+                                                <h5 className="product__title">{card.title}</h5>
                                                 <div className='product__info_bottom'>
                                                     <span className="item__card-suptitle">
-                                                        <span className="product__price">{a.price}</span>
+                                                        <span className="product__price">{card.price}</span>
                                                         <span className="item__card-score"/>
                                                     </span>
                                                 </div>

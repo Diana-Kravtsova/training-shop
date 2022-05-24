@@ -1,3 +1,4 @@
+/*
 
 import './Home.scss'
 import Banners from "./banners/Banners"
@@ -11,12 +12,12 @@ import Offer from '../offer/Offer'
 import Blog from "../Blog/Blog";
 import Clothes from "./clothes/Clothes";
 
-const Home = ({banners}) => {
+const Home = ({banners, products }) => {
     return (
         <div className='home'>
             <Banners  banners={banners} />
             <Policies />
-            <Clothes />
+            <Clothes  />
             <section className='collections'>
                 <Collection src={collection1} title='new season' text='lookbook collection' />
                 <Collection src={collection2} title='sale' text='get up to' accent='50% OFF' />
@@ -27,4 +28,4 @@ const Home = ({banners}) => {
     )
 }
 
-export default Home
+export default Home*/

@@ -7,7 +7,6 @@ import Pinterest from "../assets/img/vectorHeader/Vector-3.svg";
 import Location from "../assets/img/vectorFooter/location-marker 1.svg";
 import Phone from "../assets/img/vectorHeader/Vector-2.svg";
 import TimeDark from "../assets/img/vectorFooter/timeDark.svg";
-import Mail from "../assets/img/vectorFooter/Vector.svg";
 import Card1 from "../assets/img/vectorFooter/cards/card1.svg";
 import Card2 from "../assets/img/vectorFooter/cards/card2.svg";
 import Card3 from "../assets/img/vectorFooter/cards/card3.svg";
@@ -43,8 +42,7 @@ const Footer = () => {
                             items={[
                                 "men",
                                 "women",
-                                "accessories",
-                                "beauty"
+                                "blog"
                             ]}
                         />
 
@@ -53,7 +51,6 @@ const Footer = () => {
                 <div className="footer-nav-information">
                     <ul>
                         <li>Information</li>
-                        <li>About Us</li>
                         <li>Contact Us</li>
                         <li>Blog</li>
                         <li>FAQs</li>
@@ -62,7 +59,6 @@ const Footer = () => {
                 <div className="footer-nav-links">
                     <ul>
                         <li>Useful links</li>
-                        <li>Terms & Conditions</li>
                         <li>Returns & Exchanges</li>
                         <li>Shipping & Delivery</li>
                         <li>Privacy Policy</li>
@@ -73,7 +69,7 @@ const Footer = () => {
                         <li>Contact us</li>
                         <li>
                             <img src={Location} alt="location" width="15" height="15"/>
-                            <span>Belarus, Gomel, Lange 17</span>
+                            <span>Belarus, Gomel</span>
                         </li>
                         <li>
                             <img src={Phone} alt="phone" width="15" height="15"/>
@@ -82,10 +78,6 @@ const Footer = () => {
                         <li>
                             <img src={TimeDark} alt="time" width="15" height="15"/>
                             <span>All week 24/7</span>
-                        </li>
-                        <li>
-                            <img src={Mail} alt="mail" width="15" height="15"/>
-                            <span>info@clevertec.ru</span>
                         </li>
                     </ul>
                 </div>
@@ -100,9 +92,6 @@ const Footer = () => {
                     <img src={Card5} alt="card" width="50" height="20"/>
                     <img src={Card6} alt="card" width="50" height="20"/>
                     <img src={Card7} alt="card" width="50" height="20"/>
-                </div>
-                <div>
-                    <a href="https://clevertec.ru/study/frontend.html" rel="noreferrer" target="_blank">Clevertec.ru/training</a>
                 </div>
             </div>
         </div>

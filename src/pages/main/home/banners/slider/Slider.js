@@ -5,7 +5,11 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import './slider.scss'
 
-let slides = [slider, slider, slider]
+import bannerWomen from '../../../../../assets/img/imagesMain/banner-women.jpg'
+import bannerMen from '../../../../../assets/img/imagesMain/banner-men.jpg'
+import bannerAccessories from '../../../../../assets/img/imagesMain/banner-accessories.jpg'
+
+let slides = [slider, bannerWomen, bannerMen, bannerAccessories]
 
 const MainSlider = () => {
     return (<div className="main__slider" data-test-id='main-slider'>
@@ -21,8 +25,8 @@ const MainSlider = () => {
                     <SwiperSlide key={index} >
                         <img src={slide} alt="slider" />
                         <div className='campaignTeaser__slider'>
-                            <div className="main__slider_text">Banner</div>
-                            <h3 className="main__slider_title">your Title text</h3>
+                            <div className="main__slider_text">Don't lose</div>
+                            <h3 className="main__slider_title">Huge sales!</h3>
                         </div>
                     </SwiperSlide>)}
             </Swiper>

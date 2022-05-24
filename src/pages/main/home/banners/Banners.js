@@ -4,7 +4,7 @@ import MainSlider from './slider/Slider'
 
 import bannerWomen from '../../../../assets/img/imagesMain/banner-women.jpg'
 import bannerMen from '../../../../assets/img/imagesMain/banner-men.jpg'
-import bannerAccessories from '../../../../assets/img/imagesMain/banner-accessories.jpg'
+import bannerBlog from '../../../../assets/img/imagesMain/banner-accessories.jpg'
 
 
 
@@ -15,7 +15,7 @@ const Banners = () => {
                 <MainSlider />
                 <MainCategory title={'Women'} src={bannerWomen} />
                 <MainCategory title={'Men'} src={bannerMen} />
-                <MainCategory title={'Accessories'} src={bannerAccessories} />
+                <MainCategory title={'Blog'} src={bannerBlog} />
             </div>
         </div>
     )
